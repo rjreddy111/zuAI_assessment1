@@ -1,0 +1,55 @@
+.header-syles {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+    padding: 10px;
+}
+
+.buttons-container {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+
+.login-button {
+    border-radius: 8px;
+    height: 30px;
+    width: 80px;
+    margin-right: 10px;
+    background-color: beige;
+    border: none;
+}
+
+.create-button {
+    border-radius: 8px;
+    height: 30px;
+    width: 120px;
+    margin-right: 10px;
+    background-color:blue;
+    border: none;
+    color: azure;
+    cursor: pointer;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+
+}
+
+
+
+.create-button:hover {
+    background-color: aqua;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:526px) {
+    .zuAi-size {
+        font-size: 25px;
+
+    }
+    .header-syles{
+        height: 4vh;
+    }
+    
+}

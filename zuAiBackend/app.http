@@ -20,3 +20,6 @@ Content-Type: application/json
     "content": "The main focus is to find what you want to do and how you would like to do plays a crucial role in our life always be focus and attentive for everything",
     "author": "Mr. Rahul Reddy"
 }
+
+### 
+DELETE http://localhost:5001/posts/3

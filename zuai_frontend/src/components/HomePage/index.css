@@ -1,0 +1,33 @@
+.unordered-list-container {
+    padding: 0px;
+    list-style-type: none;
+    height: 100%;
+    width: 90%;
+}
+
+.style-all-blogs {
+    color: red;
+    text-shadow: 2px 2px 0 grey
+}
+
+.home-page {
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .unordered-list-container{
+        width: 90%;
+    }
+    .home-page{
+        width: 70%;
+    }
+}
+
+.loader-designing {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

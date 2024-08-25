@@ -1,0 +1,25 @@
+.footer-container {
+    position:fixed;
+    top: 90vh;
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyrights {
+    margin-right: 10px;
+}
+.linkedn {
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+
+.screen-reader-only {
+    position: absolute;
+    width: 1px;
+    overflow: hidden;
+    height: 1px;
+}
