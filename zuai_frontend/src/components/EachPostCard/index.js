@@ -19,7 +19,7 @@ const EachPostCard = (props)=> {
             
             </Link>
             <button className="delete-button" onClick={deleteBlog} >Delete</button>
-            <button className="delete-icon"> <AiOutlineDelete/></button>
+            <button className="delete-icon" onClick={deleteBlog} > <AiOutlineDelete/></button>
         </li>
         
     ) 
