@@ -46,9 +46,23 @@ class PostDetails extends Component {
 
   createdFormatTime = (createdAt) => {
     const present = new Date ()
+
+    //updating time to UTC +5:30 
+    const utcDifferentTime = 5 * 60 * 60 * 1000 + 30 * 60 *1000
     const createdDate = new Date(createdAt)
-    const seconds = Math.floor((present-createdDate)/1000)
-    console.log(seconds,present,createdDate)
+    
+
+    const getUpdatedTime = new Date (createdDate.getTime() + utcDifferentTime)
+   
+
+ 
+    // calculating seconds 
+    const seconds = Math.floor((present-getUpdatedTime)/1000)
+    console.log(getUpdatedTime,present)
+    console.log(seconds)
+
+    // required time format 
+    
     let interval = Math.floor (seconds/ (60*60*24*365))
     console.log(interval)
     if (interval>=1) return `${interval} year${interval===1 ? "": "s"} ago`; 
@@ -61,8 +75,8 @@ class PostDetails extends Component {
     interval = Math.floor(seconds/(60*60))
     if (interval>=1) return `${interval} hour${interval===1 ? "": "s"} ago` ; 
 
-    interval = Math.floor(seconds/60) 
-    if (interval>=1) return `${interval} second${interval===1 ? "" : "s"} ago`; 
+    interval = Math.floor(seconds/(60)) 
+    if (interval>=1) return `${interval} minute${interval===1 ? "" : "s"} ago`; 
 
     return `Just Now`
   }
